@@ -1,7 +1,11 @@
 import os
 import logging
+from dotenv import load_dotenv
 import discord
 from discord import app_commands
+
+
+load_dotenv()
 
 TOKEN=os.environ['DISCORD_TOKEN']
 

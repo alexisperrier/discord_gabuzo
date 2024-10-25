@@ -6,8 +6,9 @@ services:
       - ./src/main.py:/app/main.py
       - ./requirements.txt:/app/requirements.txt
 
-    # env_file:
-    #   - .env
+    env_file:
+      - .env
 
+    # extra security: whitelist which envt variables from the env_file will be passed to the container
     environment:
       - DISCORD_TOKEN
