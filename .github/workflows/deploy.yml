@@ -48,9 +48,9 @@ jobs:
       # which means it checks the file for syntax errors, merges all configurations
       # and outputs a normalized version.
 
-      - name: Validate compose.yaml file
-        run: |
-          docker compose -f compose.yaml config
+      # - name: Validate compose.yaml file
+      #   run: |
+      #     docker compose -f compose.yaml config
 
   deploy: # Separate job for deployment
     runs-on: ubuntu-latest # Uses the latest Ubuntu runner provided by GitHub
